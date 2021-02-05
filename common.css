@@ -1,0 +1,36 @@
+#header{
+  background:#0396A6;
+  font-size:1.6rem;
+  
+}
+.headerWrap{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px;
+}
+
+.header_logo{
+  width: 97px;
+  height: 41px;
+}
+.gnav_list{
+  display:flex;
+}
+.gnav_item:not(:last-child){
+  margin:0 20px 0 0;
+}
+.gnav_anc{
+  color:#FFFFFF;
+}
+
+.footer{
+  padding:20px 0;
+  background:#111111;
+  font-size:1.2rem;
+  color:#FFF;
+  text-align:center;
+  
+
+
+}
