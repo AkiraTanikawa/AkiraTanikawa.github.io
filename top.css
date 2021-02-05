@@ -1,0 +1,292 @@
+
+/* ------------------
+Common
+------------------ */
+
+/* ---Title------ */
+.title{
+  text-align:center;
+}
+.title_heading{
+  font-family: 'Lobster', cursive;
+  font-size:5.5rem;
+}
+.title_heading.-blue{
+  color:#0396A6;
+}
+.title_heading.-white{
+  color:#fff;
+}
+.title_text{
+  font-size: 1.6rem;
+}
+.title_text.-white{
+  color:#fff;
+}
+
+/* ---l-content------ */
+.l-content{
+  width:1100px;
+  margin: 0 auto;
+}
+.l-content-sm{
+  width:820px;
+  margin: 0 auto;
+}
+.l-content-cs{
+  background: #FFFFFF ;
+  border-radius: 20px;
+  padding:40px;
+}
+
+/* ---Table------ */
+.table{
+  font-size:1.6rem;
+}
+
+.table:last-of-type{
+  margin-top:35px;
+}
+
+.thead,.tdata{
+  padding:10px;
+  border:solid 1px #CCC;
+}
+.thead{
+  width:120px;
+  background:#F4F4F4;
+  font-weight:normal;
+  vertical-align: middle;
+}
+/* ------------------
+MV
+------------------ */
+
+.mv{
+  padding:40px 0;
+}
+
+/* ------------------
+About
+------------------ */
+.about{
+  position: relative;
+  background: #0396A6;
+}
+.about::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background:url(../images/top/about_bg.jpg) right center/cover no-repeat;
+}
+
+.about_content{
+  width: 50%;
+  padding: 95px 105px 105px 120px;
+  color:#fff;
+}
+
+.about_heading{
+  font-family: 'Lobster', cursive;
+  font-size:5.5rem;
+}
+
+.about_headingSub{
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+.about_text{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+  line-height:1.6;
+}
+.about_btn{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 70px; 
+  background: #111111;
+  color:#fff;
+  font-size:2rem;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.about_btn::after{
+  position: absolute;
+  content:"";
+  display: block;
+  top:50%;
+  right:10px;
+  width: 20px;
+  height:2px;
+  margin-top: -1px;
+  background: #fff;
+  transition: all .3s;
+
+}
+.about_btn:hover{
+  background: #fff;
+  color:#111111;
+
+}
+.about_btn:hover::after{
+  right:0;
+  background: #F28963;
+}
+
+
+/* ------------------
+Consept
+------------------ */
+.consept{
+  background:url(../images/top/consept_bg.jpg);
+  padding:80px;
+
+}
+.consept_content{
+  position:relative;
+  background: #FFFFFF ;
+  border-radius: 20px;
+  padding:40px;
+
+}
+
+.consept_img_top{
+position: absolute;
+top:-20px;
+right:20px;
+}
+
+.consept_img_btm{
+  position: absolute;
+  bottom:20px;
+  left:-20px;
+  }
+
+.consept_text{
+  font-size:16px;
+  text-align: center;
+  padding:30px 0 0 0;
+  line-height:1.7;
+}
+
+
+/* ------------------
+Menu
+------------------ */
+.menu{
+  padding:80px;
+  background-color: #F28963;
+  
+}
+.menu_detail{
+  display:flex;
+  justify-content: space-between;
+  margin-top:40px ; 
+}
+.menu_item{
+  background-color:#FFFFFF;
+  width: calc((100% - 60px) / 4);
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.menu_btm{
+  text-align: center;
+  padding:30px 20px 20px 20px;
+  font-size: 16px;
+
+}
+
+
+/* ------------------
+Access
+------------------ */
+.access{
+  padding:80px 0;
+
+}
+.access_content{
+  margin-top: 40px;
+  clear:both;
+}
+.access_content:after{
+  content:".";
+  display:block;
+  height:0;
+  font-size:0;
+  clear:both;
+  visibility:hidden;
+}
+
+.access_detail{
+  float:left;
+  width:calc(50% - 10px);
+}
+.access_map{
+  float:right;
+  width:calc(50% - 10px);
+}
+
+/* ------------------
+Contact
+------------------ */
+.contact{
+  padding:80px 0;
+  background:#F25E5E;
+}
+.contact_list{
+  text-align: center;
+  margin-top:40px;
+}
+.contact_item{
+  display:inline-block;
+  width:calc((100% - 20px) / 2);
+  height: 100px;
+  line-height: 100px;
+  background-color:#fff;
+  padding:0 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  text-align:center;
+  vertical-align: middle;
+
+}
+.contact_item.-phone{
+  font-family: 'Lobster', cursive;
+  font-size:49px;
+}
+.contact_item.-phone:before{
+  content:"\e0cd";
+  display:inline-block;
+  font-family:'Material Icons';
+  color:#F25E5E;
+  vertical-align: middle;
+}
+.contact_item:first-child{
+  margin-right: 15px;
+}
+.contact_item.-mail{
+font-size: 27px;
+font-weight:bold;
+}
+.contact_item.-mail:before{
+  content:"\e158";
+  display:inline-block;
+  font-family:'Material Icons';
+  color:#F25E5E;
+  vertical-align: middle;
+}
+
+.contact_anc{
+  color:#F25E5E;
+  
+}
